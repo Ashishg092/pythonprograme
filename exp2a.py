@@ -4,11 +4,12 @@ Created on Fri Feb 13 12:53:25 2026
 
 @author: User
 """
-n = int ( input (" Enter Number : "))
+year = int ( input (" ENTER  YEAR :" ))
 
-fact = 1 
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0 ):
 
-for i in range (1 , n + 1):
-    fact = fact * i
-    
-    print ( " factorial : " , fact)
+    print (" LEAP YEAR " )
+ 
+else:
+
+    print (" NOT A LEAP YEAR ")
